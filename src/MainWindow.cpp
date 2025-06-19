@@ -1,6 +1,10 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h" // 包含Qt Designer生成的头文件
 #include <QFileDialog>
+#include <QCoreApplication> // 确保包含了这两个头文件
+#include <QDir>
+#include <QFile>
+#include <QDebug>           // 方便打印调试信息
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
@@ -34,11 +38,25 @@ MainWindow::~MainWindow() {
 // --- UI控件槽函数的实现 ---
 
 void MainWindow::on_openFileButton_clicked() {
-    // 打开一个文件对话框让用户选择音频文件
-    QUrl fileUrl = QFileDialog::getOpenFileUrl(this, "Open Audio File", QUrl(), "Audio Files (*.mp3 *.flac *.wav)");
-    if (fileUrl.isValid()) {
-        ui->trackLabel->setText(fileUrl.fileName()); // 更新标签显示文件名
-        m_audioEngine->play(fileUrl); // 让引擎播放这个文件
+    // 1. 获取可执行程序所在的目录路径
+    //    在我们的项目中，这个路径就是 build/ 目录
+    QString appDir = QCoreApplication::applicationDirPath();
+    qDebug() << "Application Directory: " << appDir;
+
+    // 2. 构造我们预先放置的音频文件的完整路径
+    //    我们假设你已经在 build/ 目录下创建了 audio/ 文件夹，并放入了 test.mp3
+    QString filePath = QDir(appDir).filePath("audio/test1.mp3");
+    qDebug() << "Attempting to play file from: " << filePath;
+
+    // 3. 检查文件是否存在，然后播放
+    if (QFile::exists(filePath)) {
+        QUrl fileUrl = QUrl::fromLocalFile(filePath);
+        ui->trackLabel->setText(fileUrl.fileName());
+        m_audioEngine->play(fileUrl);
+    } else {
+        // 如果文件不存在，在界面和调试控制台给出清晰的错误提示
+        ui->trackLabel->setText("Error: 'build/audio/test.mp3' not found!");
+        qDebug() << "File does not exist at the specified path.";
     }
 }
 
