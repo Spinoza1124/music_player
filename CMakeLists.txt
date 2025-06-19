@@ -34,8 +34,10 @@ include_directories(include)
 add_executable(music_player
   src/main.cpp
   src/MainWindow.cpp
-  # 如果你已经创建了 AudioEngine.cpp, 也要把它加进来
-  # src/AudioEngine.cpp 
+  src/AudioEngine.cpp
+  # 把包含Q_OBJECT的头文件也加进来
+  include/MainWindow.h
+  include/AudioEngine.h
 )
 
 # 链接所有需要的库到我们的程序

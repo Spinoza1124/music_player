@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "music_player_autogen"
   "CMakeFiles/music_player.dir/music_player_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/music_player.dir/music_player_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/music_player.dir/src/AudioEngine.cpp.o"
+  "CMakeFiles/music_player.dir/src/AudioEngine.cpp.o.d"
   "CMakeFiles/music_player.dir/src/MainWindow.cpp.o"
   "CMakeFiles/music_player.dir/src/MainWindow.cpp.o.d"
   "CMakeFiles/music_player.dir/src/main.cpp.o"

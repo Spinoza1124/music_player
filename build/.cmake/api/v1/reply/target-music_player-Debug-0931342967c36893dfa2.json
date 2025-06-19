@@ -21,7 +21,6 @@
 			"_qt_internal_find_qt_dependencies",
 			"_pkg_create_imp_target",
 			"_pkg_recalculate",
-			"_pkg_check_modules_internal",
 			"pkg_check_modules",
 			"include_directories"
 		],
@@ -55,7 +54,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 42,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
@@ -191,37 +190,31 @@
 				"parent" : 26
 			},
 			{
-				"command" : 12,
+				"command" : 11,
 				"file" : 0,
 				"line" : 27,
 				"parent" : 0
 			},
 			{
-				"command" : 11,
-				"file" : 12,
-				"line" : 841,
-				"parent" : 28
-			},
-			{
 				"command" : 10,
 				"file" : 12,
-				"line" : 669,
-				"parent" : 29
+				"line" : 849,
+				"parent" : 28
 			},
 			{
 				"command" : 9,
 				"file" : 12,
 				"line" : 339,
-				"parent" : 30
+				"parent" : 29
 			},
 			{
 				"command" : 2,
 				"file" : 12,
 				"line" : 320,
-				"parent" : 31
+				"parent" : 30
 			},
 			{
-				"command" : 13,
+				"command" : 12,
 				"file" : 0,
 				"line" : 31,
 				"parent" : 0
@@ -271,7 +264,7 @@
 					"path" : "/home/liuyang/code/vscode_project/music_player/build/music_player_autogen/include"
 				},
 				{
-					"backtrace" : 33,
+					"backtrace" : 32,
 					"path" : "/home/liuyang/code/vscode_project/music_player/include"
 				},
 				{
@@ -329,7 +322,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -392,12 +386,12 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 32,
+				"backtrace" : 31,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libtag.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 32,
+				"backtrace" : 31,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libz.so",
 				"role" : "libraries"
 			}
@@ -419,21 +413,30 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				4,
+				5
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				3
+				6
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				4
+				7
 			]
 		}
 	],
@@ -459,16 +462,32 @@
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/music_player_autogen/timestamp",
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/AudioEngine.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/MainWindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/AudioEngine.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/music_player_autogen/timestamp.rule",
+			"path" : "build/music_player_autogen/timestamp",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/music_player_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
 		}
 	],
 	"type" : "EXECUTABLE"

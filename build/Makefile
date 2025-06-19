@@ -179,6 +179,30 @@ music_player_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/music_player.dir/build.make CMakeFiles/music_player.dir/music_player_autogen/mocs_compilation.cpp.s
 .PHONY : music_player_autogen/mocs_compilation.cpp.s
 
+src/AudioEngine.o: src/AudioEngine.cpp.o
+.PHONY : src/AudioEngine.o
+
+# target to build an object file
+src/AudioEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/music_player.dir/build.make CMakeFiles/music_player.dir/src/AudioEngine.cpp.o
+.PHONY : src/AudioEngine.cpp.o
+
+src/AudioEngine.i: src/AudioEngine.cpp.i
+.PHONY : src/AudioEngine.i
+
+# target to preprocess a source file
+src/AudioEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/music_player.dir/build.make CMakeFiles/music_player.dir/src/AudioEngine.cpp.i
+.PHONY : src/AudioEngine.cpp.i
+
+src/AudioEngine.s: src/AudioEngine.cpp.s
+.PHONY : src/AudioEngine.s
+
+# target to generate assembly for a file
+src/AudioEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/music_player.dir/build.make CMakeFiles/music_player.dir/src/AudioEngine.cpp.s
+.PHONY : src/AudioEngine.cpp.s
+
 src/MainWindow.o: src/MainWindow.cpp.o
 .PHONY : src/MainWindow.o
 
@@ -241,6 +265,9 @@ help:
 	@echo "... music_player_autogen/mocs_compilation.o"
 	@echo "... music_player_autogen/mocs_compilation.i"
 	@echo "... music_player_autogen/mocs_compilation.s"
+	@echo "... src/AudioEngine.o"
+	@echo "... src/AudioEngine.i"
+	@echo "... src/AudioEngine.s"
 	@echo "... src/MainWindow.o"
 	@echo "... src/MainWindow.i"
 	@echo "... src/MainWindow.s"

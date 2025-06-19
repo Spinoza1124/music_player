@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "music_player_autogen/timestamp" "custom" "music_player_autogen/deps"
   "/home/liuyang/code/vscode_project/music_player/build/music_player_autogen/mocs_compilation.cpp" "CMakeFiles/music_player.dir/music_player_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/music_player.dir/music_player_autogen/mocs_compilation.cpp.o.d"
+  "/home/liuyang/code/vscode_project/music_player/src/AudioEngine.cpp" "CMakeFiles/music_player.dir/src/AudioEngine.cpp.o" "gcc" "CMakeFiles/music_player.dir/src/AudioEngine.cpp.o.d"
   "/home/liuyang/code/vscode_project/music_player/src/MainWindow.cpp" "CMakeFiles/music_player.dir/src/MainWindow.cpp.o" "gcc" "CMakeFiles/music_player.dir/src/MainWindow.cpp.o.d"
   "/home/liuyang/code/vscode_project/music_player/src/main.cpp" "CMakeFiles/music_player.dir/src/main.cpp.o" "gcc" "CMakeFiles/music_player.dir/src/main.cpp.o.d"
   )
