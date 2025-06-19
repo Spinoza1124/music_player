@@ -1,0 +1,5 @@
+/home/liuyang/code/vscode_project/music_player/build/CMakeFiles/music_player.dir
+/home/liuyang/code/vscode_project/music_player/build/CMakeFiles/edit_cache.dir
+/home/liuyang/code/vscode_project/music_player/build/CMakeFiles/rebuild_cache.dir
+/home/liuyang/code/vscode_project/music_player/build/CMakeFiles/music_player_autogen_timestamp_deps.dir
+/home/liuyang/code/vscode_project/music_player/build/CMakeFiles/music_player_autogen.dir

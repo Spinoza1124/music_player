@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "music_player",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "music_player::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-music_player-Debug-8259652c8bf021cae6d8.json",
+					"name" : "music_player",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "music_player_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-music_player_autogen-Debug-92fe4ec3eb07030fa818.json",
+					"name" : "music_player_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "music_player_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-music_player_autogen_timestamp_deps-Debug-f70975e6e47d657972e2.json",
+					"name" : "music_player_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/liuyang/code/vscode_project/music_player/build",
+		"source" : "/home/liuyang/code/vscode_project/music_player"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
